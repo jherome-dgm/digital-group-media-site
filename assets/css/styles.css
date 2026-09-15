@@ -219,7 +219,7 @@ section.on-dark .lead{color:var(--on-dark-soft);}
   border-bottom-color:var(--ink-line);padding-block:10px;
 }
 .brand{display:flex;align-items:center;gap:.65em;font-family:var(--font-display);font-weight:700;color:#fff;}
-.brand-mark{height:34px;width:auto;flex:none;object-fit:contain;}
+.brand-mark{height:44px;width:auto;flex:none;object-fit:contain;}
 .brand-word{font-size:1.02rem;letter-spacing:-.01em;}
 .brand-word b{color:var(--orange-light);}
 @media (max-width:640px){.brand-word .brand-full{display:none;}}
