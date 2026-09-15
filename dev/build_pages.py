@@ -58,8 +58,8 @@ home_body = '''  <section class="hero" id="top" aria-labelledby="hero-h1">
       <h1 id="hero-h1" class="fs-h1-fix">Not Seeing The <span class="hl">Dosh</span> From Your Digital?</h1>
       <p class="hero-sub">We guide established UK businesses through the process of building a brand online that people trust, engage with &mdash; and buy from.</p>
       <div class="hero-cta">
-        <a class="btn btn-primary" href="contact.html">Book a Call<svg class="ic" aria-hidden="true"><use href="#ic-arrow"/></svg></a>
-        <a class="btn btn-ghost" href="success-stories.html">See Our Work</a>
+        <a class="btn btn-primary" href="contact">Book a Call<svg class="ic" aria-hidden="true"><use href="#ic-arrow"/></svg></a>
+        <a class="btn btn-ghost" href="success-stories">See Our Work</a>
       </div>
       <div class="hero-proof">
         <span><strong>4.9/5</strong> on Google Reviews</span>
@@ -94,7 +94,7 @@ home_body = '''  <section class="hero" id="top" aria-labelledby="hero-h1">
         <div class="feat-card">
           <span class="feat-num">03</span>
           <h3>Website</h3>
-          <p>The hub of most of your sales &amp; marketing activity, and the primary source of information for your prospects. <a class="btn-line" style="font:inherit;color:inherit;background:none;padding:0" href="web-design.html">See our web design service &rarr;</a></p>
+          <p>The hub of most of your sales &amp; marketing activity, and the primary source of information for your prospects. <a class="btn-line" style="font:inherit;color:inherit;background:none;padding:0" href="web-design">See our web design service &rarr;</a></p>
         </div>
         <div class="feat-card">
           <span class="feat-num">04</span>
@@ -144,7 +144,7 @@ home_body = '''  <section class="hero" id="top" aria-labelledby="hero-h1">
           <span class="eyebrow">Why Digital Group Media</span>
           <h2 id="why-h2">Eight reasons agencies get compared to us.</h2>
           <p class="lead">We work with owners, directors and marketing managers of established UK SMEs who need better results from their online presence.</p>
-          <a class="btn-line why-cta" href="about-us.html">Meet the team<svg class="ic" aria-hidden="true"><use href="#ic-arrow"/></svg></a>
+          <a class="btn-line why-cta" href="about-us">Meet the team<svg class="ic" aria-hidden="true"><use href="#ic-arrow"/></svg></a>
         </div>
 
         <div class="orbit reveal" aria-hidden="true">
@@ -215,7 +215,7 @@ home_body = '''  <section class="hero" id="top" aria-labelledby="hero-h1">
           <span class="eyebrow">Selected Work</span>
           <h2 id="work-h2">Results you can check for yourself.</h2>
         </div>
-        <p class="lead">Four highlights &mdash; <a class="btn-line" style="display:inline-flex" href="success-stories.html">see every success story&nbsp;&rarr;</a></p>
+        <p class="lead">Four highlights &mdash; <a class="btn-line" style="display:inline-flex" href="success-stories">see every success story&nbsp;&rarr;</a></p>
       </div>
 
       <div class="work-grid reveal-stagger">
@@ -358,8 +358,8 @@ web_design_body = '''  <section class="hero hero--page" aria-labelledby="hero-h1
       <h1 id="hero-h1">High Performance Websites That <span class="hl">Delight</span> &amp; Inform Your Visitors</h1>
       <p class="hero-sub">Converting them into customers. A website isn't just there to validate your business card &mdash; it's the window to your business and should be working hard for you 24/7.</p>
       <div class="hero-cta">
-        <a class="btn btn-primary" href="contact.html">Book a Call<svg class="ic" aria-hidden="true"><use href="#ic-arrow"/></svg></a>
-        <a class="btn btn-ghost" href="success-stories.html">See Our Work</a>
+        <a class="btn btn-primary" href="contact">Book a Call<svg class="ic" aria-hidden="true"><use href="#ic-arrow"/></svg></a>
+        <a class="btn btn-ghost" href="success-stories">See Our Work</a>
       </div>
     </div>
   </section>
@@ -391,7 +391,7 @@ web_design_body = '''  <section class="hero hero--page" aria-labelledby="hero-h1
             <li>Website training</li>
             <li>1 month unlimited hosting, support &amp; maintenance</li>
           </ul>
-          <a class="btn btn-ghost btn-block" href="contact.html">Ask About Foundation</a>
+          <a class="btn btn-ghost btn-block" href="contact">Ask About Foundation</a>
         </div>
         <div class="tier-card tier-card--featured">
           <span class="tier-badge">Most Chosen</span>
@@ -409,7 +409,7 @@ web_design_body = '''  <section class="hero hero--page" aria-labelledby="hero-h1
             <li>3rd party testing &amp; managed launch</li>
             <li>3 months unlimited hosting, support &amp; maintenance</li>
           </ul>
-          <a class="btn btn-primary btn-block" href="contact.html">Ask About Market Leader</a>
+          <a class="btn btn-primary btn-block" href="contact">Ask About Market Leader</a>
         </div>
         <div class="tier-card">
           <div class="tier-name">Apex</div>
@@ -422,10 +422,10 @@ web_design_body = '''  <section class="hero hero--page" aria-labelledby="hero-h1
             <li>3 months unlimited hosting, support &amp; maintenance</li>
             <li>3 months of Sales &amp; Marketing support (PPC, email, social media)</li>
           </ul>
-          <a class="btn btn-ghost btn-block" href="contact.html">Ask About Apex</a>
+          <a class="btn btn-ghost btn-block" href="contact">Ask About Apex</a>
         </div>
       </div>
-      <p class="tier-note" style="text-align:center;margin-top:2rem;color:var(--text-mute);font-size:.88rem;">If you're unsure what any of these features and deliverables mean and how they would benefit your project, we'd be happy to run through it with you and answer any questions &mdash; <a class="btn-line" style="display:inline-flex" href="contact.html">get in touch&nbsp;&rarr;</a></p>
+      <p class="tier-note" style="text-align:center;margin-top:2rem;color:var(--text-mute);font-size:.88rem;">If you're unsure what any of these features and deliverables mean and how they would benefit your project, we'd be happy to run through it with you and answer any questions &mdash; <a class="btn-line" style="display:inline-flex" href="contact">get in touch&nbsp;&rarr;</a></p>
     </div>
   </section>
 
@@ -488,8 +488,8 @@ dm_body = '''  <section class="hero hero--page" aria-labelledby="hero-h1">
       <h1 id="hero-h1">Stop Leaving <span class="hl">Money</span> On The Table</h1>
       <p class="hero-sub">Digital marketing companies in Birmingham are ten a penny these days &mdash; the key is to find one that values meaningful outcomes like increased sales, not vanity metrics.</p>
       <div class="hero-cta">
-        <a class="btn btn-primary" href="contact.html">Book a Call<svg class="ic" aria-hidden="true"><use href="#ic-arrow"/></svg></a>
-        <a class="btn btn-ghost" href="contact.html">Get Your Free Expert Review</a>
+        <a class="btn btn-primary" href="contact">Book a Call<svg class="ic" aria-hidden="true"><use href="#ic-arrow"/></svg></a>
+        <a class="btn btn-ghost" href="contact">Get Your Free Expert Review</a>
       </div>
     </div>
   </section>
@@ -586,8 +586,8 @@ video_body = '''  <section class="hero hero--page" aria-labelledby="hero-h1">
       <h1 id="hero-h1">Give Your Business The <span class="hl">Edge</span></h1>
       <p class="hero-sub">Starting from as little as &#163;2,495, give your business the edge with a compelling video that can be expertly shot and edited within 24 hours.</p>
       <div class="hero-cta">
-        <a class="btn btn-primary" href="contact.html">Book a Call<svg class="ic" aria-hidden="true"><use href="#ic-arrow"/></svg></a>
-        <a class="btn btn-ghost" href="success-stories.html">See Our Work</a>
+        <a class="btn btn-primary" href="contact">Book a Call<svg class="ic" aria-hidden="true"><use href="#ic-arrow"/></svg></a>
+        <a class="btn btn-ghost" href="success-stories">See Our Work</a>
       </div>
     </div>
   </section>
@@ -658,8 +658,8 @@ support_body = '''  <section class="hero hero--page" aria-labelledby="hero-h1">
       <h1 id="hero-h1">Unlimited WordPress <span class="hl">Support</span>, Hosting &amp; Maintenance</h1>
       <p class="hero-sub">&#163;99pm for peace of mind &mdash; we proactively monitor, secure and update your site, so your investment in having a website keeps paying off.</p>
       <div class="hero-cta">
-        <a class="btn btn-primary" href="contact.html">Book a Call<svg class="ic" aria-hidden="true"><use href="#ic-arrow"/></svg></a>
-        <a class="btn btn-ghost" href="contact.html">Request a Free Expert Review</a>
+        <a class="btn btn-primary" href="contact">Book a Call<svg class="ic" aria-hidden="true"><use href="#ic-arrow"/></svg></a>
+        <a class="btn btn-ghost" href="contact">Request a Free Expert Review</a>
       </div>
     </div>
   </section>
@@ -775,8 +775,8 @@ ppc_body = '''  <section class="hero hero--page" aria-labelledby="hero-h1">
       <h1 id="hero-h1">Not Seeing The <span class="hl">Cash</span> From Your Clicks?</h1>
       <p class="hero-sub">If you're looking to unlock the power of Google Ads, book your no-obligation Discovery Call or Google Ads Audit with either James or Danny.</p>
       <div class="hero-cta">
-        <a class="btn btn-primary" href="contact.html">Book a Call<svg class="ic" aria-hidden="true"><use href="#ic-arrow"/></svg></a>
-        <a class="btn btn-ghost" href="contact.html">Get a Free Google Ads Audit</a>
+        <a class="btn btn-primary" href="contact">Book a Call<svg class="ic" aria-hidden="true"><use href="#ic-arrow"/></svg></a>
+        <a class="btn btn-ghost" href="contact">Get a Free Google Ads Audit</a>
       </div>
     </div>
   </section>
@@ -940,7 +940,7 @@ roadmap_body = '''  <section class="hero hero--page" aria-labelledby="hero-h1">
       <h1 id="hero-h1">Chart Your Course With A Bespoke <span class="hl">Roadmap</span></h1>
       <p class="hero-sub">A bespoke, actionable sales &amp; marketing plan tailored to your business goals &mdash; giving you the clarity you need to accelerate growth, sales and revenue.</p>
       <div class="hero-cta">
-        <a class="btn btn-primary" href="contact.html">Book a Call<svg class="ic" aria-hidden="true"><use href="#ic-arrow"/></svg></a>
+        <a class="btn btn-primary" href="contact">Book a Call<svg class="ic" aria-hidden="true"><use href="#ic-arrow"/></svg></a>
       </div>
     </div>
   </section>
@@ -1147,7 +1147,7 @@ success_body = '''  <section class="hero hero--page" aria-labelledby="hero-h1">
       <h1 id="hero-h1">Results You Can Check For Yourself</h1>
       <p class="hero-sub">Every project below links to the real, live business we built it for &mdash; no invented case studies, no stock photography.</p>
       <div class="hero-cta">
-        <a class="btn btn-primary" href="contact.html">Book a Call<svg class="ic" aria-hidden="true"><use href="#ic-arrow"/></svg></a>
+        <a class="btn btn-primary" href="contact">Book a Call<svg class="ic" aria-hidden="true"><use href="#ic-arrow"/></svg></a>
       </div>
     </div>
   </section>
@@ -1388,7 +1388,7 @@ privacy_body = '''  <section class="hero hero--page section-pad-sm" aria-labelle
   <section class="section-pad">
     <div class="wrap">
       <div class="prose reveal">
-        <p>This policy explains what personal data Digital Group Media Ltd collects through this website, why we collect it, and the choices you have. If anything here is unclear, <a class="btn-line" style="display:inline-flex" href="contact.html">get in touch&nbsp;&rarr;</a></p>
+        <p>This policy explains what personal data Digital Group Media Ltd collects through this website, why we collect it, and the choices you have. If anything here is unclear, <a class="btn-line" style="display:inline-flex" href="contact">get in touch&nbsp;&rarr;</a></p>
 
         <h2>What information do we collect about you?</h2>
         <p>We collect personal data through contact forms, emails, blog comments and cookies &mdash; including your name, email address, postal address, phone number, IP address and company details.</p>

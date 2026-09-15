@@ -52,6 +52,14 @@ def _active_in(href, children):
     return bool(children) and any(h == href for h, _ in children)
 
 
+def clean_href(filename):
+    """Cloudflare Pages serves foo.html at /foo and redirects /foo.html
+    there, so links can drop the extension (index.html -> /)."""
+    if filename == "index.html":
+        return "/"
+    return filename[:-5] if filename.endswith(".html") else filename
+
+
 def header_block(active_href):
     desktop_items = []
     mobile_items = []
@@ -61,13 +69,13 @@ def header_block(active_href):
             # Home is represented by the logo; still list it explicitly
             # on mobile, where the logo isn't part of the nav column.
             current = ' aria-current="page"' if href == active_href else ''
-            mobile_items.append('<a href="%s"%s>%s</a>' % (href, current, label))
+            mobile_items.append('<a href="%s"%s>%s</a>' % (clean_href(href), current, label))
             continue
         if children:
             dd_id += 1
             parent_current = ' aria-current="page"' if (href == active_href or _active_in(active_href, children)) else ''
             dd_links = "\n        ".join(
-                '<a href="%s"%s>%s</a>' % (h, ' aria-current="page"' if h == active_href else '', l)
+                '<a href="%s"%s>%s</a>' % (clean_href(h), ' aria-current="page"' if h == active_href else '', l)
                 for h, l in children
             )
             desktop_items.append('''<div class="nav-item has-dropdown">
@@ -78,21 +86,21 @@ def header_block(active_href):
         <div class="nav-dropdown" id="dd-%d">
           %s
         </div>
-      </div>''' % (href, parent_current, label, dd_id, label, dd_id, dd_links))
-            mobile_items.append('<a href="%s"%s>%s</a>' % (href, parent_current, label))
+      </div>''' % (clean_href(href), parent_current, label, dd_id, label, dd_id, dd_links))
+            mobile_items.append('<a href="%s"%s>%s</a>' % (clean_href(href), parent_current, label))
             for h, l in children:
-                mobile_items.append('<a class="mobile-sub" href="%s"%s>%s</a>' % (h, ' aria-current="page"' if h == active_href else '', l))
+                mobile_items.append('<a class="mobile-sub" href="%s"%s>%s</a>' % (clean_href(h), ' aria-current="page"' if h == active_href else '', l))
         else:
             current = ' aria-current="page"' if href == active_href else ''
-            desktop_items.append('<a href="%s"%s>%s</a>' % (href, current, label))
-            mobile_items.append('<a href="%s"%s>%s</a>' % (href, current, label))
+            desktop_items.append('<a href="%s"%s>%s</a>' % (clean_href(href), current, label))
+            mobile_items.append('<a href="%s"%s>%s</a>' % (clean_href(href), current, label))
     nav_links = "\n      ".join(desktop_items)
     mobile_nav_links = "\n  ".join(mobile_items)
     return '''<a class="skip-link" href="#main">Skip to main content</a>
 
 <header class="site-header" id="siteHeader">
   <div class="wrap">
-    <a class="brand" href="index.html">
+    <a class="brand" href="/">
       %s
       <span class="brand-word"><span class="brand-full">Digital <b>Group</b> Media</span><span class="brand-short">D<b>G</b>M</span></span>
     </a>
@@ -100,7 +108,7 @@ def header_block(active_href):
       %s
     </nav>
     <div class="nav-actions">
-      <a class="btn btn-primary" href="contact.html">Book a Call<svg class="ic" aria-hidden="true"><use href="#ic-arrow"/></svg></a>
+      <a class="btn btn-primary" href="contact">Book a Call<svg class="ic" aria-hidden="true"><use href="#ic-arrow"/></svg></a>
       <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
         <span class="nav-toggle-bars"><span></span><span></span><span></span></span>
       </button>
@@ -110,14 +118,14 @@ def header_block(active_href):
 
 <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
   %s
-  <a class="btn btn-primary" href="contact.html">Book a Call<svg class="ic" aria-hidden="true"><use href="#ic-arrow"/></svg></a>
+  <a class="btn btn-primary" href="contact">Book a Call<svg class="ic" aria-hidden="true"><use href="#ic-arrow"/></svg></a>
 </nav>''' % (BRAND_MARK, nav_links, mobile_nav_links)
 
 
 FOOTER = '''<footer class="site-footer">
   <div class="wrap footer-top">
     <div class="footer-brand">
-      <a class="brand" href="index.html">
+      <a class="brand" href="/">
         %s
         <span class="brand-word">Digital <b>Group</b> Media</span>
       </a>
@@ -126,24 +134,24 @@ FOOTER = '''<footer class="site-footer">
     <div class="footer-col">
       <h4>Web Design</h4>
       <ul>
-        <li><a href="web-design.html">Website Development</a></li>
-        <li><a href="support.html">WordPress Support</a></li>
+        <li><a href="web-design">Website Development</a></li>
+        <li><a href="support">WordPress Support</a></li>
       </ul>
       <h4 class="footer-col-spaced">Digital Marketing</h4>
       <ul>
-        <li><a href="digital-marketing-services.html">All Marketing Services</a></li>
-        <li><a href="ppc-management.html">PPC Management</a></li>
-        <li><a href="sales-and-marketing-roadmap.html">Sales &amp; Marketing Roadmap</a></li>
+        <li><a href="digital-marketing-services">All Marketing Services</a></li>
+        <li><a href="ppc-management">PPC Management</a></li>
+        <li><a href="sales-and-marketing-roadmap">Sales &amp; Marketing Roadmap</a></li>
       </ul>
     </div>
     <div class="footer-col">
       <h4>Company</h4>
       <ul>
-        <li><a href="videography-services.html">Video Production</a></li>
-        <li><a href="success-stories.html">Success Stories</a></li>
-        <li><a href="about-us.html">About Us</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="videography-services">Video Production</a></li>
+        <li><a href="success-stories">Success Stories</a></li>
+        <li><a href="about-us">About Us</a></li>
+        <li><a href="contact">Contact</a></li>
+        <li><a href="privacy-policy">Privacy Policy</a></li>
       </ul>
     </div>
     <div class="footer-col">
@@ -161,8 +169,8 @@ FOOTER = '''<footer class="site-footer">
   <div class="wrap footer-bottom">
     <span>&copy; <span id="year">2026</span> Digital Group Media Ltd. All rights reserved.</span>
     <span class="footer-legal">
-      <a href="privacy-policy.html">Privacy Policy</a>
-      <a href="about-us.html">About Us</a>
+      <a href="privacy-policy">Privacy Policy</a>
+      <a href="about-us">About Us</a>
     </span>
   </div>
 </footer>''' % BRAND_MARK
