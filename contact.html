@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact Us | Digital Group Media</title>
+<meta name="description" content="Get in touch with Digital Group Media, Birmingham: call 0121 224 7412, email hello@digitalgroupmedia.com, or send a message.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<svg class="icon-defs" aria-hidden="true">
+  <symbol id="ic-arrow" viewBox="0 0 16 16"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="ic-arrow-up" viewBox="0 0 16 16"><path d="M2 14 14 2M6 2h8v8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="ic-chevron" viewBox="0 0 16 16"><path d="M4 6l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img class="brand-mark" src="assets/images/logo-dgm.png" alt="" width="237" height="123">
+      <span class="brand-word"><span class="brand-full">Digital <b>Group</b> Media</span><span class="brand-short">D<b>G</b>M</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <div class="nav-item has-dropdown">
+        <a class="nav-parent-link" href="web-design.html">Web Design</a>
+        <button class="nav-caret-btn" type="button" aria-expanded="false" aria-controls="dd-1" aria-label="Show Web Design submenu">
+          <svg class="nav-caret" aria-hidden="true"><use href="#ic-chevron"/></svg>
+        </button>
+        <div class="nav-dropdown" id="dd-1">
+          <a href="web-design.html">Website Development</a>
+        <a href="support.html">WordPress Support</a>
+        </div>
+      </div>
+      <div class="nav-item has-dropdown">
+        <a class="nav-parent-link" href="digital-marketing-services.html">Digital Marketing Services</a>
+        <button class="nav-caret-btn" type="button" aria-expanded="false" aria-controls="dd-2" aria-label="Show Digital Marketing Services submenu">
+          <svg class="nav-caret" aria-hidden="true"><use href="#ic-chevron"/></svg>
+        </button>
+        <div class="nav-dropdown" id="dd-2">
+          <a href="ppc-management.html">PPC Management</a>
+        <a href="sales-and-marketing-roadmap.html">Sales and Marketing Roadmap</a>
+        </div>
+      </div>
+      <a href="videography-services.html">Video Production</a>
+      <a href="success-stories.html">Success Stories</a>
+      <a href="about-us.html">About Us</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn btn-primary" href="contact.html">Book a Call<svg class="ic" aria-hidden="true"><use href="#ic-arrow"/></svg></a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+        <span class="nav-toggle-bars"><span></span><span></span><span></span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+  <a href="index.html">Home</a>
+  <a href="web-design.html">Web Design</a>
+  <a class="mobile-sub" href="web-design.html">Website Development</a>
+  <a class="mobile-sub" href="support.html">WordPress Support</a>
+  <a href="digital-marketing-services.html">Digital Marketing Services</a>
+  <a class="mobile-sub" href="ppc-management.html">PPC Management</a>
+  <a class="mobile-sub" href="sales-and-marketing-roadmap.html">Sales and Marketing Roadmap</a>
+  <a href="videography-services.html">Video Production</a>
+  <a href="success-stories.html">Success Stories</a>
+  <a href="about-us.html">About Us</a>
+  <a href="contact.html" aria-current="page">Contact</a>
+  <a class="btn btn-primary" href="contact.html">Book a Call<svg class="ic" aria-hidden="true"><use href="#ic-arrow"/></svg></a>
+</nav>
+
+<main id="main">
+  <section class="hero hero--page" aria-labelledby="hero-h1">
+    <div class="hero-grid" aria-hidden="true"></div>
+    <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
+    <div class="wrap">
+      <span class="hero-badge"><span class="dot"></span>CONTACT &middot; WE REPLY FAST</span>
+      <h1 id="hero-h1">Let's Talk About Your <span class="hl">Growth</span></h1>
+      <p class="hero-sub">Tell us where you're stuck, or just say hello &mdash; we read every message ourselves.</p>
+    </div>
+  </section>
+
+  <section class="section-pad">
+    <div class="wrap">
+      <div class="contact-grid">
+        <form id="contactForm" class="reveal" novalidate>
+          <div class="form-grid">
+            <div class="field">
+              <label for="cf-name">Your name</label>
+              <input id="cf-name" name="name" type="text" required autocomplete="name">
+            </div>
+            <div class="field">
+              <label for="cf-company">Company <span class="opt">(optional)</span></label>
+              <input id="cf-company" name="company" type="text" autocomplete="organization">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-grid">
+              <div class="field">
+                <label for="cf-phone">Best contact number</label>
+                <input id="cf-phone" name="phone" type="tel" required autocomplete="tel">
+              </div>
+              <div class="field">
+                <label for="cf-email">Your email</label>
+                <input id="cf-email" name="email" type="email" required autocomplete="email">
+              </div>
+            </div>
+            <div class="field">
+              <label for="cf-website">Your current website <span class="opt">(if applicable)</span></label>
+              <input id="cf-website" name="website" type="url" placeholder="https://">
+            </div>
+            <div class="field">
+              <label for="cf-message">How can we help?</label>
+              <textarea id="cf-message" name="message" required></textarea>
+            </div>
+            <label class="check-row"><input type="checkbox" required> I agree to the Privacy Policy.</label>
+            <label class="check-row"><input type="checkbox"> Keep me posted with occasional news and updates.</label>
+            <button type="submit" class="btn btn-primary btn-block">Send Message<svg class="ic" aria-hidden="true"><use href="#ic-arrow"/></svg></button>
+            <p class="form-note">This opens a pre-filled email to hello@digitalgroupmedia.com from your own email client &mdash; nothing is stored on this page.</p>
+          </div>
+        </form>
+
+        <div class="contact-card reveal">
+          <h3>Digital Group Media Ltd</h3>
+          <address>
+            305 The Greenhouse<br>
+            The Custard Factory, Gibb Street<br>
+            Birmingham, B9 4DP, UK<br><br>
+            <a href="tel:01212247412">0121 224 7412</a><br>
+            <a href="mailto:hello@digitalgroupmedia.com">hello@digitalgroupmedia.com</a><br>
+            <a href="mailto:support@digitalgroupmedia.com">support@digitalgroupmedia.com</a> (support)
+          </address>
+          <a class="btn-line" href="https://www.google.com/maps/search/?api=1&amp;query=305+The+Greenhouse+The+Custard+Factory+Gibb+Street+Birmingham+B9+4DP" target="_blank" rel="noopener">Get Directions<svg class="ic" aria-hidden="true"><use href="#ic-arrow-up"/></svg></a>
+          <div class="map-note">Rated 4.9/5 on Google Reviews &middot; 15+ years working with established UK SMEs.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-top">
+    <div class="footer-brand">
+      <a class="brand" href="index.html">
+        <img class="brand-mark" src="assets/images/logo-dgm.png" alt="" width="237" height="123">
+        <span class="brand-word">Digital <b>Group</b> Media</span>
+      </a>
+      <p>A Birmingham digital agency helping established UK SMEs build brands, websites and marketing systems that actually get results.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Web Design</h4>
+      <ul>
+        <li><a href="web-design.html">Website Development</a></li>
+        <li><a href="support.html">WordPress Support</a></li>
+      </ul>
+      <h4 class="footer-col-spaced">Digital Marketing</h4>
+      <ul>
+        <li><a href="digital-marketing-services.html">All Marketing Services</a></li>
+        <li><a href="ppc-management.html">PPC Management</a></li>
+        <li><a href="sales-and-marketing-roadmap.html">Sales &amp; Marketing Roadmap</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="videography-services.html">Video Production</a></li>
+        <li><a href="success-stories.html">Success Stories</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <address>
+        Digital Group Media Ltd<br>
+        305 The Greenhouse<br>
+        The Custard Factory, Gibb Street<br>
+        Birmingham, B9 4DP<br><br>
+        <a href="mailto:hello@digitalgroupmedia.com">hello@digitalgroupmedia.com</a><br>
+        <a href="tel:01212247412">0121 224 7412</a>
+      </address>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>&copy; <span id="year">2026</span> Digital Group Media Ltd. All rights reserved.</span>
+    <span class="footer-legal">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="about-us.html">About Us</a>
+    </span>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Digital Group Media",
+  "description": "Get in touch with Digital Group Media, Birmingham: call 0121 224 7412, email hello@digitalgroupmedia.com, or send a message.",
+  "url": "https://digitalgroupmedia.com/",
+  "telephone": "+441212247412",
+  "email": "hello@digitalgroupmedia.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "305 The Greenhouse, The Custard Factory, Gibb Street",
+    "addressLocality": "Birmingham",
+    "postalCode": "B9 4DP",
+    "addressCountry": "GB"
+  },
+  "foundingDate": "2008",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "ratingCount": "1",
+    "bestRating": "5"
+  }
+}
+</script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
